@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid-boxing</title>
+
+    <style>
+      .img {
+        width: 200px;
+        height: 200px;
+      }
+
+      .grid-box {
+        background-color: antiquewhite;
+        display: grid;
+        grid-template-columns: auto repeat(3, 20px 200px);
+        grid-template-rows: 50px 20px 200px auto 80px;
+      }
+
+      nav {
+        background-color: rgb(102, 44, 44);
+        text-align: center;
+        color: rgb(135, 103, 44);
+        grid-row: 1/2;
+        grid-column: 1/-1;
+      }
+
+      span {
+        padding: 5px;
+        color: rgb(135, 103, 44);
+        border: 1px solid rgb(135, 103, 44);
+        border-radius: 7px;
+      }
+
+      .main {
+        grid-row: 3/6;
+        grid-column: 1/2;
+      }
+
+      .image1 {
+        grid-row: 3/4;
+        grid-column: 3/4;
+      }
+
+      .image2 {
+        grid-row: 3/4;
+        grid-column: 5/6;
+      }
+
+      .image3 {
+        grid-row: 3/4;
+        grid-column: 7/8;
+      }
+
+      footer {
+        text-align: center;
+        background-color: rgb(109, 48, 48);
+        color: snow;
+        grid-row: 5/6;
+        grid-column: 3/-1;
+      }
+
+      .goose {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-box">
+      <nav>
+        <pre> <span>MENU</span>  <span>NEWS</span>  <span>ABOUT</span>  <span>CONTACT</span></pre>
+      </nav>
+
+      <div class="main">
+        <h3>Intr0ducing: Breads of the World</h3>
+        <p>
+          Bread is a staple food prepared from a dough of flour (usually wheat)
+          and water, usually by baking. Throughout recorded history and around
+          the world, it has been an important part of many cultures' diet.It is
+          one of the oldest human-made foods, having been of significance since
+          the dawn of agriculture, and plays an essential role in both religious
+          rituals and secular culture.
+        </p>
+        <p>
+          Bread may be leavened by naturally occurring microbes (e.g.
+          sourdough), chemicals (e.g. baking soda), industrially produced yeast,
+          or high-pressure aeration, which creates the gas bubbles that fluff up
+          bread. In many countries, commercial bread often contains additives to
+          improve flavor, texture, color, shelf life, nutrition, and ease of
+          production.
+        </p>
+        <h3>Introducing: pie of the World</h3>
+        <p>
+          This article is about the baked good. For the mathematical constant,
+          see Pi. For other uses, see Pie (disambiguation). Pie A pear pie Main
+          ingredients Pie shell Variations Sweet pies, savoury pies Media: Pie A
+          pie is a baked dish which is usually made of a pastry dough casing
+          that contains a filling of various sweet or savoury ingredients. Sweet
+          pies may be filled with fruit (as in an apple pie), nuts (pecan pie),
+          fruit preserves (jam tart), brown sugar (sugar pie), sweetened
+          vegetables (rhubarb pie), or with thicker fillings based on eggs and
+          dairy (as in custard pie and cream pie). Savoury pies may be filled
+          with meat (as in a steak pie or a Jamaican patty), eggs and cheese
+          (such as quiches or flans) or a mixture of meat and vegetables (pot
+          pie).
+          <h3>Introducing: croissant of the World</h3>
+          <p>A croissant (French pronunciation: [kʁwasɑ̃] (listen)) is a buttery, flaky, viennoiserie pastry inspired by the shape of the Austrian kipferl but using the French yeast-leavened laminated dough.[1][better source needed] Croissants are named for their historical crescent shape. The dough is layered with butter, rolled and folded several times in succession, then rolled into a thin sheet, in a technique called laminating. The process results in a layered, flaky texture, similar to a puff pastry.
+
+            Crescent-shaped breads have been made since the Renaissance, and crescent-shaped cakes possibly since antiquity.[2] Kipferls have long been a staple of Austrian cuisine, and are often found in French bakeries and pâtisseries. The modern croissant was developed in the early 20th century when French bakers replaced the brioche dough of the kipferl with a yeast-leavened laminated dough.[3] </p>
+        </p>
+      </div>
+
+      <div class="image1 imgg">
+        <img src="./image/bread.jpg" alt="" width="200px" height="200px" />
+      </div>
+
+      <div class="image2 imgg">
+        <img src="./image/pie.jpeg" alt="" width="200px" height="200px" />
+      </div>
+
+      <div class="image3 imgg">
+        <img src="./image/croissant.avif" alt="" width="200px" height="200px" />
+      </div>
+
+      <footer>
+        <p>Goose Bakery | Seekonk, MA</p>
+        <p>Monday-Friend: 5am to 3am | Saturday & Sunday: 6am to 4pm</p>
+      </footer>
+    </div>
+  </body>
+</html>

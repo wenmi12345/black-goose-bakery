@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body p {
+  font-family: monospace;
+}
+
+.bakery-box {
+  display: grid;
+  grid-template-areas:
+    " nav  nav nav nav "
+    " logo logo logo  logo"
+    " main  main  main aside"
+    "footer footer footer  footer";
+  grid-template-rows: 50px 150px 1fr 30px;
+}
+
+nav {
+  background-color: rgb(122, 78, 54);
+  grid-area: nav;
+  text-align: center;
+}
+
+.nav-box {
+  margin: 15px 10px;
+}
+
+.nav-span {
+  padding: 5px;
+  border: 1px solid rgb(223, 192, 106);
+  color: rgb(223, 192, 106);
+  border-radius: 8px;
+  margin: 0 10px;
+}
+
+.logo {
+  background-image: url(../image/croissant.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-area: logo;
+  color: snow;
+}
+
+.logo-box {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.award-sticker {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  width: 200px;
+  height: 200px;
+}
+
+.cap-height {
+  font-size: 40px;
+}
+
+.main {
+  background-color: rgb(255, 255, 255);
+  grid-area: main;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid palegoldenrod;
+  border-radius: 8px;
+}
+
+.h2-top {
+  border-top: 2px solid rgb(142, 74, 74);
+  border-left: 4px solid rgb(142, 74, 74);
+  color: rgb(142, 74, 74);
+  padding: 8px;
+  margin-top: 20px;
+}
+
+.float1 {
+  float: left;
+  shape-outside: circle(50%);
+}
+
+.float2 {
+  float: left;
+  shape-outside: url(../image/muff-jpg-removebg-preview.png);
+}
+
+.clear {
+  clear: both;
+}
+
+a {
+  color: sandybrown;
+  text-decoration: none;
+  border-bottom: 2px solid sandybrown;
+}
+
+aside {
+  background-color: rgb(221, 216, 202);
+  grid-area: aside;
+  padding: 20px;
+}
+
+.days {
+  color: rgb(176, 145, 107);
+}
+
+footer {
+  background-color: rgb(86, 52, 9);
+  color: white;
+  grid-area: footer;
+}
+
+footer .footter-box {
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* @media starts here ... */
+
+@media screen and (orientation: landscape) {
+  body {
+    background: skyblue;
+  }
+}
+@media screen and (orientation: portrait) {
+  body {
+    background: coral;
+  }
+}
+
+@media only screen (min-width: 360px) {
+  body {
+    position: relative;
+  }
+
+  .award-sticker {
+    position: absolute;
+    top: 1800px;
+    left: 200px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .logo-box {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .bakery-box {
+    display: grid;
+    grid-template-areas:
+      " nav  nav   nav  nav"
+      " logo logo logo logo"
+      " main  main  main main"
+      " aside aside aside aside"
+      "footer footer footer footer ";
+    grid-template-rows: 50px 150px 1fr 200px 30px;
+  }
+
+  .nav {
+    grid-area: nav;
+  }
+
+  .logo {
+    grid-area: logo;
+  }
+
+  .main {
+    grid-area: main;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+  .fresh {
+    text-align: center;
+  }
+}
